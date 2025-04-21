@@ -1,0 +1,35 @@
+fun show(a: Int, b: Int) {  // Function to display the entered numbers
+    println("You entered $a and $b")
+}
+
+fun add(a: Int, b: Int): Int {  // Function to add two numbers
+    var sum = 0
+    sum = a + b  // Fixed the typo: 'atb' to 'a + b'
+    return sum
+}
+
+fun findMinimumNumber(a: Int, b: Int): Int {  // Function to find the minimum of two numbers
+    var minimum = 0
+    if (a > b) {
+        minimum = b  // Corrected the logic to assign the minimum correctly
+    } else {
+        minimum = a
+    }
+    return minimum  // Fixed the typo: 'minimim' to 'minimum'
+}
+
+fun main() {
+    println("Enter first number: ")
+    var a: Int = readln()!!.toInt()  // Fixed typo: 'reAdln()' to 'readln()'
+
+    println("Enter second number: ")
+    var b: Int = readln()!!.toInt()  // Fixed typo: 'Readln()' to 'readln()'
+
+    show(a, b)  // Call the show function to display entered numbers
+
+    var sum = add(a, b)  // Call the add function to calculate the sum
+    println("Sum of the two entered numbers is $sum")  // Fixed typo: 'printLn' to 'println'
+
+    var minimum = findMinimumNumber(a, b)  // Call the findMinimumNumber function
+    println("And the smallest between $a and $b is $minimum")  // Fixed typo: 'findMinimunNumber' to 'findMinimumNumber'
+}
