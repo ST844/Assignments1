@@ -1,0 +1,57 @@
+package com.example.myapplication.ui.theme
+
+fun main(args: Array<String>) {
+    println("Hello world")
+
+    // mutable: we can reassign values to mutable variables
+    var age = 20
+    age = 25
+
+    // immutable: we can't reassign values to immutable variables
+    val roll = 15
+    // Uncommenting the next line will cause an error because 'roll' is immutable.
+    // roll = 10 // This line will cause an error, as 'roll' is a val and cannot be reassigned.
+
+    var isTrue: Boolean = true
+    var b: Char = 'R'
+    var c: Byte = 12
+    var d: Int = 43543
+    var f: Long = -51321354L
+    var i: Float = 5.6451344F
+    var h: Double = 7.32644564
+
+    // Print basic types
+    println(isTrue)  // prints the Boolean value
+    println(b)  // prints the Char value
+    println(c)  // prints the Byte value
+    println(d)  // prints the Int value
+    println(f)  // prints the Long value
+    println(i)  // prints the Float value
+    println(h)  // prints the Double value
+
+    // Converting Double to Int and Byte
+    var x: Double = 132.32
+    var y: Int = x.toInt()  // Convert Double to Int
+    var z: Byte = y.toByte()  // Convert Int to Byte
+
+    // Print the converted types
+    println(x)  // prints the Double value
+    println(y)  // prints the Int value
+    println(z)  // prints the Byte value
+
+    // String operations
+    var str: String = "Hello world"  // String type
+    var lengthOfStr: Int = str.length  // Get the length of the string
+    var equalsCheck: Boolean = str.equals("Hello world")  // Check if strings are equal
+    var username: String = "softwarica"  // Another string for demonstration
+
+    // String manipulations and checks
+    println(username.trim())  // prints the username after removing leading/trailing whitespace
+    println(str)  // prints the String value
+    println(lengthOfStr)  // prints the length of the string
+    println(str.isEmpty())  // checks if the string is empty
+    println(str.lowercase())  // prints the string in lowercase
+    println(str.uppercase())  // prints the string in uppercase
+    println(equalsCheck)  // prints whether the string equals "Hello world"
+    println(str.plus(", How are you?"))  // Concatenates string and prints it
+}
